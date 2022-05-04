@@ -12,3 +12,4 @@ ILRuntimeDemo/Packages/packages-lock.json
 ILRuntimeDemo/.vsconfig
 /out
 ILRuntimeDemo/*.csproj
+/ILRuntimeDemo/build

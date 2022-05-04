@@ -75,6 +75,9 @@ public static class ExampleGenConfig
                 new List<string>(){"UnityEngine.CanvasRenderer", "onRequestRebuild"},
                 new List<string>(){"UnityEngine.Light", "areaSize"},
                 new List<string>(){"UnityEngine.Light", "lightmapBakeType"},
+                new List<string>(){"UnityEngine.Light", "SetLightDirty"},
+                new List<string>(){"UnityEngine.Light", "shadowRadius"},
+                new List<string>(){"UnityEngine.Light", "shadowAngle"},
                 new List<string>(){"UnityEngine.WWW", "MovieTexture"},
                 new List<string>(){"UnityEngine.WWW", "GetMovieTexture"},
                 new List<string>(){"UnityEngine.AnimatorOverrideController", "PerformOverrideClipListCleanup"},
@@ -90,5 +93,16 @@ public static class ExampleGenConfig
                 new List<string>(){"System.IO.DirectoryInfo", "CreateSubdirectory", "System.String", "System.Security.AccessControl.DirectorySecurity"},
                 new List<string>(){"System.IO.DirectoryInfo", "Create", "System.Security.AccessControl.DirectorySecurity"},
                 new List<string>(){"UnityEngine.MonoBehaviour", "runInEditMode"},
-            };
+                
+                new List<string>(){"UnityEngine.AudioSource", "PlayOnGamepad"},
+                new List<string>(){"UnityEngine.AudioSource", "DisableGamepadOutput"},
+                new List<string>(){"UnityEngine.AudioSource", "SetGamepadSpeakerMixLevel"},
+                new List<string>(){"UnityEngine.AudioSource", "SetGamepadSpeakerMixLevelDefault"},
+                new List<string>(){"UnityEngine.AudioSource", "SetGamepadSpeakerRestrictedAudio"},
+                new List<string>(){"UnityEngine.AudioSource", "SetGamepadSpeakerRestrictedAudio"},
+                new List<string>(){"UnityEngine.AudioSource", "GamepadSpeakerSupportsOutputType"},
+                new List<string>(){"UnityEngine.AudioSource", "gamepadSpeakerOutputType"},
+                
+
+    };
 }

@@ -23,6 +23,7 @@ public class ILRuntimeCLRBinding
         }
 
         AssetDatabase.Refresh();
+        Debug.Log("生成CLR绑定 完成");
     }
 
     static void InitILRuntime(ILRuntime.Runtime.Enviorment.AppDomain domain)

@@ -19,6 +19,7 @@ public class ILRuntimeCrossBinding
         }
 
         AssetDatabase.Refresh();
+        Debug.Log("跨域继承适配器 完成");
     }
 }
 #endif
