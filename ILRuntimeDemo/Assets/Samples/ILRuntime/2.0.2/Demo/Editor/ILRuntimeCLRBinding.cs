@@ -19,7 +19,7 @@ public class ILRuntimeCLRBinding
 
             //Crossbind Adapter is needed to generate the correct binding code
             InitILRuntime(domain);
-            ILRuntime.Runtime.CLRBinding.BindingCodeGenerator.GenerateBindingCode(domain, "Assets/Samples/ILRuntime/Generated");
+            ILRuntime.Runtime.CLRBinding.BindingCodeGenerator.GenerateBindingCode(domain, "Assets/Samples/ILRuntime/2.0.2/Demo/Scripts/Examples/Generated");
         }
 
         AssetDatabase.Refresh();
