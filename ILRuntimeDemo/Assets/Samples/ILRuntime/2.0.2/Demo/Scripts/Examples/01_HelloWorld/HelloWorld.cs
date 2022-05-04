@@ -2,6 +2,8 @@
 using System.Collections;
 using System.IO;
 using ILRuntime.Runtime.Enviorment;
+using UnityEngine.Networking;
+
 //下面这行为了取消使用WWW的警告，Unity2018以后推荐使用UnityWebRequest，处于兼容性考虑Demo依然使用WWW
 #pragma warning disable CS0618
 public class HelloWorld : MonoBehaviour
@@ -16,6 +18,8 @@ public class HelloWorld : MonoBehaviour
     {
         StartCoroutine(LoadHotFixAssembly());
     }
+    
+    private const string HttpRoot = "http://192.168.31.13:8000";
 
     IEnumerator LoadHotFixAssembly()
     {
@@ -28,29 +32,25 @@ public class HelloWorld : MonoBehaviour
         //这个DLL文件是直接编译HotFix_Project.sln生成的，已经在项目中设置好输出目录为StreamingAssets，在VS里直接编译即可生成到对应目录，无需手动拷贝
         //工程目录在Assets\Samples\ILRuntime\1.6\Demo\HotFix_Project~
         //以下加载写法只为演示，并没有处理在编辑器切换到Android平台的读取，需要自行修改
-#if UNITY_ANDROID
-        WWW www = new WWW(Application.streamingAssetsPath + "/HotFix_Project.dll");
-#else
-        WWW www = new WWW("file:///" + Application.streamingAssetsPath + "/HotFix_Project.dll");
-#endif
-        while (!www.isDone)
-            yield return null;
-        if (!string.IsNullOrEmpty(www.error))
-            UnityEngine.Debug.LogError(www.error);
-        byte[] dll = www.bytes;
-        www.Dispose();
+        UnityWebRequest request = UnityWebRequest.Get(HttpRoot + "/HotFix_Project.dll");
+        yield return request.SendWebRequest();
+        if (request.result != UnityWebRequest.Result.Success) {
+            Debug.Log("Download dll failed: " + request.error);
+            yield break;
+        }
+        
+        byte[] dll = request.downloadHandler.data;
+        request.Dispose();
 
         //PDB文件是调试数据库，如需要在日志中显示报错的行号，则必须提供PDB文件，不过由于会额外耗用内存，正式发布时请将PDB去掉，下面LoadAssembly的时候pdb传null即可
-#if UNITY_ANDROID
-        www = new WWW(Application.streamingAssetsPath + "/HotFix_Project.pdb");
-#else
-        www = new WWW("file:///" + Application.streamingAssetsPath + "/HotFix_Project.pdb");
-#endif
-        while (!www.isDone)
-            yield return null;
-        if (!string.IsNullOrEmpty(www.error))
-            UnityEngine.Debug.LogError(www.error);
-        byte[] pdb = www.bytes;
+        request = UnityWebRequest.Get(HttpRoot + "/HotFix_Project.pdb");
+        yield return request.SendWebRequest();
+        if (request.result != UnityWebRequest.Result.Success) {
+            Debug.Log("Download pdb failed: " + request.error);
+            yield break;
+        }
+        
+        byte[] pdb = request.downloadHandler.data;
         fs = new MemoryStream(dll);
         p = new MemoryStream(pdb);
         try
