@@ -754,9 +754,9 @@
       <Project>{1eb5ac34-2d1a-c3a2-ee00-f141731a51e7}</Project>
       <Name>ILRuntime</Name>
     </ProjectReference>
-    <ProjectReference Include="HotFix.csproj">
-      <Project>{8596d5e1-a378-f487-7f01-6db762d3c59c}</Project>
-      <Name>HotFix</Name>
+    <ProjectReference Include="HotFix_Project.csproj">
+      <Project>{f9c206bc-4930-089b-5367-8b2852cc1621}</Project>
+      <Name>HotFix_Project</Name>
     </ProjectReference>
     <ProjectReference Include="LitJson.csproj">
       <Project>{e54ad804-08fe-343b-edf9-2add204c6f43}</Project>

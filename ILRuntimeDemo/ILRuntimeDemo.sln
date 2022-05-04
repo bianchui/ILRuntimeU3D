@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ILRuntime", "ILRuntime.cspr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LitJson", "LitJson.csproj", "{e54ad804-08fe-343b-edf9-2add204c6f43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotFix", "HotFix.csproj", "{8596d5e1-a378-f487-7f01-6db762d3c59c}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotFix_Project", "HotFix_Project.csproj", "{f9c206bc-4930-089b-5367-8b2852cc1621}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{1ede42ba-bbf7-86ee-e4d8-a63e3b3f5f48}"
 EndProject
@@ -26,8 +26,8 @@ Global
 		{1eb5ac34-2d1a-c3a2-ee00-f141731a51e7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e54ad804-08fe-343b-edf9-2add204c6f43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{e54ad804-08fe-343b-edf9-2add204c6f43}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8596d5e1-a378-f487-7f01-6db762d3c59c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8596d5e1-a378-f487-7f01-6db762d3c59c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f9c206bc-4930-089b-5367-8b2852cc1621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f9c206bc-4930-089b-5367-8b2852cc1621}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1ede42ba-bbf7-86ee-e4d8-a63e3b3f5f48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1ede42ba-bbf7-86ee-e4d8-a63e3b3f5f48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
