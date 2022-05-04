@@ -21,6 +21,7 @@ public class ILRTBase : MonoBehaviour
 
     protected void StartHotFixLoad(int defaultJITFlags = ILRuntimeJITFlags.None)
     {
+        Debug.Log("ILRTBase.StartHotFixLoad()");
         StartCoroutine(LoadHotFixAssembly(defaultJITFlags));
     }
 

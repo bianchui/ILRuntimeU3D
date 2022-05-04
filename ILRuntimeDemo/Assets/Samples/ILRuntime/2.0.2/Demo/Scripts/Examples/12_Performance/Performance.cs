@@ -55,6 +55,11 @@ public class Performance : ILRTBase
         }
     }
 
+    private void Start()
+    {
+        
+    }
+
     void CreateTestButton(string testName, GameObject go)
     {
         Button btn = go.GetComponent<Button>();
