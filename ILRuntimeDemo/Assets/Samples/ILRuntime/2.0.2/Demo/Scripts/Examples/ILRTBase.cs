@@ -1,30 +1,35 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+using ILRuntime.Runtime;
 using ILRuntime.Runtime.Enviorment;
 using UnityEngine.Networking;
 
-//下面这行为了取消使用WWW的警告，Unity2018以后推荐使用UnityWebRequest，处于兼容性考虑Demo依然使用WWW
-#pragma warning disable CS0618
 public class ILRTBase : MonoBehaviour
 {
     //AppDomain是ILRuntime的入口，最好是在一个单例类中保存，整个游戏全局就一个，这里为了示例方便，每个例子里面都单独做了一个
     //大家在正式项目中请全局只创建一个AppDomain
-    AppDomain appdomain;
+    protected AppDomain appdomain;
 
     System.IO.MemoryStream fs;
     System.IO.MemoryStream p;
-    void Start()
+    protected virtual void Start()
     {
-        StartCoroutine(LoadHotFixAssembly());
+        Debug.Log("ILRTBase.Start()");
+        StartHotFixLoad();
     }
-    
+
+    protected void StartHotFixLoad(int defaultJITFlags = ILRuntimeJITFlags.None)
+    {
+        StartCoroutine(LoadHotFixAssembly(defaultJITFlags));
+    }
+
     private const string HttpRoot = "http://192.168.31.13:8000";
 
-    IEnumerator LoadHotFixAssembly()
+    private IEnumerator LoadHotFixAssembly(int defaultJITFlags)
     {
         //首先实例化ILRuntime的AppDomain，AppDomain是一个应用程序域，每个AppDomain都是一个独立的沙盒
-        appdomain = new ILRuntime.Runtime.Enviorment.AppDomain();
+        appdomain = new ILRuntime.Runtime.Enviorment.AppDomain(defaultJITFlags);
         //正常项目中应该是自行从其他地方下载dll，或者打包在AssetBundle中读取，平时开发以及为了演示方便直接从StreammingAssets中读取，
         //正式发布的时候需要大家自行从其他地方读取dll
 
@@ -74,13 +79,12 @@ public class ILRTBase : MonoBehaviour
         //由于Unity的Profiler接口只允许在主线程使用，为了避免出异常，需要告诉ILRuntime主线程的线程ID才能正确将函数运行耗时报告给Profiler
         appdomain.UnityMainThreadID = System.Threading.Thread.CurrentThread.ManagedThreadId;
 #endif
-        //这里做一些ILRuntime的注册，HelloWorld示例暂时没有需要注册的
     }
 
     protected virtual void OnHotFixLoaded() {
     }
 
-    private void OnDestroy()
+    protected void UnloadHotFix()
     {
         if (fs != null)
             fs.Close();
@@ -88,6 +92,12 @@ public class ILRTBase : MonoBehaviour
             p.Close();
         fs = null;
         p = null;
+        appdomain = null;
+    }
+
+    protected virtual void OnDestroy()
+    {
+        UnloadHotFix();
     }
 
 }

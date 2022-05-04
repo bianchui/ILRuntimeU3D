@@ -199,7 +199,6 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_ClothSphereColliderPairWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_BoxcastCommandWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_StreamingControllerWrap.cs" />
-     <Compile Include="Assets\XLua\Gen\ExtensionMethodsWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_ImageEffectAfterScaleWrap.cs" />
      <Compile Include="Assets\XLua\Gen\Tutorial_ICalcWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_ArticulationReducedSpaceWrap.cs" />
@@ -517,6 +516,7 @@
      <Compile Include="Assets\XLua\Gen\UnityEngine_SkinnedMeshRendererWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_UI_DropdownWrap.cs" />
      <Compile Include="Assets\XLua\Gen\UnityEngine_RenderTargetSetupWrap.cs" />
+     <Compile Include="Assets\XLua\Gen\UnityWebRequestExtensionMethodsWrap.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />

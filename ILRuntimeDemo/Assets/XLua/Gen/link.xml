@@ -209,7 +209,7 @@
 		<type fullname="XLuaTest.FooExtension" preserve="all"/>
 		<type fullname="Tutorial.DerivedClass+TestEnumInner" preserve="all"/>
 		<type fullname="UnityWebRequestAwaiter" preserve="all"/>
-		<type fullname="ExtensionMethods" preserve="all"/>
+		<type fullname="UnityWebRequestExtensionMethods" preserve="all"/>
 		<type fullname="ExampleGenConfig" preserve="all"/>
 		<type fullname="LuaCallCs" preserve="all"/>
 		<type fullname="Tutorial.CSCallLua" preserve="all"/>

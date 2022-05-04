@@ -1187,7 +1187,7 @@ namespace XLua.CSObjectWrap
             translator.DelayWrapLoader(typeof(UnityWebRequestAwaiter), UnityWebRequestAwaiterWrap.__Register);
         
         
-            translator.DelayWrapLoader(typeof(ExtensionMethods), ExtensionMethodsWrap.__Register);
+            translator.DelayWrapLoader(typeof(UnityWebRequestExtensionMethods), UnityWebRequestExtensionMethodsWrap.__Register);
         
         
             translator.DelayWrapLoader(typeof(ExampleGenConfig), ExampleGenConfigWrap.__Register);
@@ -1377,7 +1377,7 @@ namespace XLua
 				
 				{typeof(UnityEngine.Networking.UnityWebRequestAsyncOperation), new List<MethodInfo>(){
 				
-				  new __GEN_DELEGATE10(ExtensionMethods.GetAwaiter)
+				  new __GEN_DELEGATE10(UnityWebRequestExtensionMethods.GetAwaiter)
 #if UNITY_WSA && !UNITY_EDITOR
                                       .GetMethodInfo(),
 #else
