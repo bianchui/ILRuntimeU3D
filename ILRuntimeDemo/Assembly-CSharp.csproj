@@ -71,6 +71,7 @@
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Collections_Generic_List_1_Int32_Binding.cs" />
      <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Boolean_Binding.cs" />
+     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Utils\UnityWebRequestAsync.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Quaternion_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\TestClassBase_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\LitJson_JsonMapper_Binding.cs" />
