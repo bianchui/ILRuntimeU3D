@@ -46,7 +46,6 @@
      <Compile Include="Assets\XLua\Src\Editor\TemplateRef.cs" />
      <Compile Include="Assets\XLua\Editor\ExampleConfig.cs" />
      <Compile Include="Assets\XLua\Src\Editor\Hotfix.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\08_MonoBehaviour\Editor\MonoBehaviourAdapterEditor.cs" />
      <Compile Include="Assets\XLua\Src\Editor\Generator.cs" />
      <Compile Include="Assets\XLua\Examples\13_BuildFromCLI\Editor\BuildFromCLI.cs" />
      <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Editor\ILRuntimeCLRBinding.cs" />
@@ -312,15 +311,6 @@
      </Reference>
      <Reference Include="log4net">
      <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.package-validation-suite@0.17.0-preview/Lib/Editor/log4net.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.CoreModule">
-     <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/Samples/ILRuntime/2.0.2/Demo/HotFix_Project/UnityDlls/UnityEngine.CoreModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.InputLegacyModule">
-     <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/Samples/ILRuntime/2.0.2/Demo/HotFix_Project/UnityDlls/UnityEngine.InputLegacyModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UIModule">
-     <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/Samples/ILRuntime/2.0.2/Demo/HotFix_Project/UnityDlls/UnityEngine.UIModule.dll</HintPath>
      </Reference>
      <Reference Include="nunit.framework">
      <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
@@ -734,6 +724,14 @@
     <ProjectReference Include="HotFix.csproj">
       <Project>{8596d5e1-a378-f487-7f01-6db762d3c59c}</Project>
       <Name>HotFix</Name>
+    </ProjectReference>
+    <ProjectReference Include="LitJson.csproj">
+      <Project>{e54ad804-08fe-343b-edf9-2add204c6f43}</Project>
+      <Name>LitJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="Examples.csproj">
+      <Project>{8ac689de-bd81-5f43-893e-e60de89f437d}</Project>
+      <Name>Examples</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

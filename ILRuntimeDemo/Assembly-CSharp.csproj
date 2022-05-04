@@ -41,7 +41,6 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\09_Reflection\ReflectionDemo.cs" />
      <Compile Include="Assets\XLua\Src\ObjectTranslatorPool.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Type_Binding.cs" />
      <Compile Include="Assets\XLua\Src\LuaTable.cs" />
@@ -49,20 +48,14 @@
      <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest.cs" />
      <Compile Include="Assets\XLua\Src\LuaDLL.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_String_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\04_Inheritance\InheritanceAdapter.cs" />
      <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\ByFile.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\08_MonoBehaviour\MonoBehaviourAdapter.cs" />
      <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\Loader\CustomLoader.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\12_Performance\Performance.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Transform_Binding.cs" />
      <Compile Include="Assets\XLua\Src\Utils.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\JsonMapper.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\CoroutineDemo_Binding.cs" />
      <Compile Include="Assets\XLua\Examples\09_GenericMethod\Foo.cs" />
      <Compile Include="Assets\XLua\Src\RawObject.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Collections_Generic_Dictionary_2_String_ILTypeInstance_Bin.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\01_HelloWorld\HelloWorld.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\11_ValueTypeBinding\QuaternionBinder.cs" />
      <Compile Include="Assets\XLua\Examples\11_RawObject\RawObjectTest.cs" />
      <Compile Include="Assets\XLua\Src\TemplateEngine\TemplateEngine.cs" />
      <Compile Include="Assets\XLua\Examples\06_Coroutine\CoroutineTest.cs" />
@@ -70,7 +63,6 @@
      <Compile Include="Assets\XLua\Examples\06_Coroutine\Coroutine_Runner.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\TestDelegateMethod_Binding.cs" />
      <Compile Include="Assets\XLua\Src\MethodWarpsCache.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\08_MonoBehaviour\MonoBehaviourDemo.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Single_Binding.cs" />
      <Compile Include="Assets\XLua\Examples\08_Hotfix\StatefullTest.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Input_Binding.cs" />
@@ -78,9 +70,6 @@
      <Compile Include="Assets\XLua\Examples\08_Hotfix\HotfixTest2.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Collections_Generic_List_1_Int32_Binding.cs" />
      <Compile Include="Assets\XLua\Src\ObjectPool.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\07_Coroutine\CoroutineAdapter.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\03_Delegate\DelegateDemo.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\02_Invocation\Invocation.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Boolean_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Quaternion_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\TestClassBase_Binding.cs" />
@@ -89,11 +78,8 @@
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Int64_Binding.cs" />
      <Compile Include="Assets\XLua\Src\LuaBase.cs" />
      <Compile Include="Assets\XLua\Examples\10_SignatureLoader\SignatureLoaderTest.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\JsonException.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Collections_Generic_List_1_ILTypeInstance_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Vector3_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\05_CLRRedirection\CLRRedirectionDemo.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\04_Inheritance\Inheritance.cs" />
      <Compile Include="Assets\XLua\Tutorial\LuaCallCSharp\LuaCallCs.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Object_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Renderer_Binding.cs" />
@@ -102,14 +88,10 @@
      <Compile Include="Assets\XLua\Examples\04_LuaObjectOrented\InvokeLua.cs" />
      <Compile Include="Assets\XLua\Examples\07_AsyncTest\MessageBox.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Int32_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\JsonData.cs" />
      <Compile Include="Assets\XLua\Src\GenAttributes.cs" />
      <Compile Include="Assets\XLua\Src\LuaFunction.cs" />
      <Compile Include="Assets\XLua\Tutorial\LoadLuaScript\ByString\ByString.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\07_Coroutine\CoroutineDemo.cs" />
      <Compile Include="Assets\XLua\Examples\05_NoGc\NoGc.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\Lexer.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\11_ValueTypeBinding\Vector2Binder.cs" />
      <Compile Include="Assets\XLua\Src\ObjectCasters.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\CLRBindings.cs" />
      <Compile Include="Assets\XLua\Src\SignatureLoader.cs" />
@@ -117,37 +99,28 @@
      <Compile Include="Assets\XLua\Src\TypeExtensions.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Action_1_String_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\DelegateDemo_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\06_CLRBinding\CLRBindingDemo.cs" />
      <Compile Include="Assets\XLua\Src\ObjectTranslator.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\11_ValueTypeBinding\Vector3Binder.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\JsonMockWrapper.cs" />
      <Compile Include="Assets\XLua\Src\LuaEnv.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\CLRBindingTestClass_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_GameObject_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\10_LitJson\LitJsonDemo.cs" />
      <Compile Include="Assets\XLua\Tutorial\CSharpCallLua\CSCallLua.cs" />
      <Compile Include="Assets\XLua\Src\CodeEmit.cs" />
      <Compile Include="Assets\XLua\Examples\ExampleGenConfig.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_WaitForSeconds_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\ParserToken.cs" />
      <Compile Include="Assets\XLua\Examples\07_AsyncTest\AsyncTest.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\JsonWriter.cs" />
      <Compile Include="Assets\XLua\Src\LuaException.cs" />
      <Compile Include="Assets\XLua\Src\DelegateBridge.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Collections_Generic_Dictionary_2_String_Int32_Binding.cs" />
      <Compile Include="Assets\XLua\Examples\09_GenericMethod\GenericMethodExample.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\Scripts\Examples\11_ValueTypeBinding\ValueTypeBindingDemo.cs" />
      <Compile Include="Assets\XLua\Src\GenericDelegateBridge.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_Diagnostics_Stopwatch_Binding.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Debug_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\IJsonWrapper.cs" />
      <Compile Include="Assets\XLua\Src\CopyByValue.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\UnityEngine_Vector2_Binding.cs" />
      <Compile Include="Assets\XLua\Src\StaticLuaCallbacks.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\System_NotSupportedException_Binding.cs" />
      <Compile Include="Assets\XLua\Src\InternalGlobals.cs" />
      <Compile Include="Assets\Samples\ILRuntime\Generated\TestDelegateFunction_Binding.cs" />
-     <Compile Include="Assets\Samples\ILRuntime\2.0.2\Demo\LitJson\JsonReader.cs" />
      <None Include="Assets\XLua\Examples\07_AsyncTest\Resources\async_test.lua.txt" />
      <None Include="Assets\XLua\Tutorial\LoadLuaScript\ByFile\Resources\byfile.lua.txt" />
      <None Include="Assets\XLua\Examples\06_Coroutine\Resources\coruntine_test.lua.txt" />
@@ -384,15 +357,6 @@
      </Reference>
      <Reference Include="ILRuntime.Mono.Cecil.Pdb">
      <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/ILRuntime/Plugins/ILRuntime.Mono.Cecil.Pdb.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.CoreModule">
-     <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/Samples/ILRuntime/2.0.2/Demo/HotFix_Project/UnityDlls/UnityEngine.CoreModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.InputLegacyModule">
-     <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/Samples/ILRuntime/2.0.2/Demo/HotFix_Project/UnityDlls/UnityEngine.InputLegacyModule.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UIModule">
-     <HintPath>/Users/hcm-b0310/Proj/Unity/frameworks/ilRuntime/ILRuntimeU3D/ILRuntimeDemo/Assets/Samples/ILRuntime/2.0.2/Demo/HotFix_Project/UnityDlls/UnityEngine.UIModule.dll</HintPath>
      </Reference>
      <Reference Include="UnityEditor.iOS.Extensions.Xcode">
      <HintPath>/Applications/Unity/Hub/Editor/2020.3.33f1/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -793,6 +757,14 @@
     <ProjectReference Include="HotFix.csproj">
       <Project>{8596d5e1-a378-f487-7f01-6db762d3c59c}</Project>
       <Name>HotFix</Name>
+    </ProjectReference>
+    <ProjectReference Include="LitJson.csproj">
+      <Project>{e54ad804-08fe-343b-edf9-2add204c6f43}</Project>
+      <Name>LitJson</Name>
+    </ProjectReference>
+    <ProjectReference Include="Examples.csproj">
+      <Project>{8ac689de-bd81-5f43-893e-e60de89f437d}</Project>
+      <Name>Examples</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
